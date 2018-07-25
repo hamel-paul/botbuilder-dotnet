@@ -20,8 +20,8 @@ namespace Microsoft.Bot.Builder.Ai.Luis.Tests
     // The LUIS application used in these unit tests is in TestData/TestLuistApp
     public class LuisRecognizerTests
     {
-        private readonly string appId = TestUtilities.GetKey("LUISAPPID");
-        private readonly string subscriptionKey = TestUtilities.GetKey("LUISAPPKEY");
+        private readonly string appId = TestUtilities.GetKey("LUISAPPID") ?? "255f58ce-703a-42a0-82ec-e91a117e43d5";
+        private readonly string subscriptionKey = TestUtilities.GetKey("LUISAPPKEY") ?? "090bdb530b984b7ca4c8fc2017eb2b1f";
         private readonly string region = "Westus";
 
         [TestMethod]
